@@ -1,6 +1,7 @@
 import React from 'react'
 import shortid from 'shortid'
 import TodoList from './TodoList'
+import Game from './Game.js'
 
 import { BrowserRouter,Route } from 'react-router-dom'
 class App extends React.Component{
@@ -38,11 +39,17 @@ class App extends React.Component{
 
     render() {
         return(
-        <BrowserRouter  basename='/todolist-app/dist'>
+              
+        <BrowserRouter>
             <div className="to-do-app container">
-                <h4 className="center  blue-text  text-lighten-2">8 pieces sliding puzzle</h4>
+                <h4 className="center  blue-text  text-lighten-2">Sliding Puzzle</h4>
+                <p className="center">Type your name to start the game !</p>
+                <Game />
+                {/* <The Game Container> */}
+                {/* <Add name> */}
                 {/* <TodoList/> */}
-                <Route 
+                {/* <Route path='/'> */}
+                {/* <Route 
                     exact path="/" 
                     component={()=> 
                         <TodoList 
@@ -64,7 +71,7 @@ class App extends React.Component{
                                     handleDeleteTodo = {this.handleDeleteTodo.bind(this)}
                                     toggleComplete ={this.toggleComplete.bind(this)}
                                     todos ={this.state.todos}
-                                    status='complete'/>} ></Route>
+                                    status='complete'/>} ></Route> */}
             </div>
         </BrowserRouter> 
 
