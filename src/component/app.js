@@ -8,14 +8,26 @@ class App extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            todos:[]
+            // todos:[],
+            challengers:[]
         }
+        // this.addChallenger=(challenger) =>{ 
+        //     this.setState({
+        //         challengers:[...this.state.challengers,challenger]
+        //     })
+        // }
     }
     addTodo (todo){
         this.setState({
             todos:[...this.state.todos,todo]
         });
         // this.switchStatus(this.props.status);
+    }
+    addChallenger(challenger){
+        // console.log(this.state)
+        this.setState({
+            challengers:[...this.state.challengers,challenger]
+        })
     }
     handleDeleteTodo(id){
         this.setState({
@@ -38,13 +50,14 @@ class App extends React.Component{
     }
 
     render() {
+        
         return(
               
         <BrowserRouter>
             <div className="to-do-app container">
                 <h4 className="center  blue-text  text-lighten-2">Sliding Puzzle</h4>
-                <p className="center">Type your name to start the game !</p>
-                <Game />
+                <Game addChallenger={this.addChallenger.bind(this)}
+                     />
                 {/* <The Game Container> */}
                 {/* <Add name> */}
                 {/* <TodoList/> */}
