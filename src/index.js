@@ -11,7 +11,4 @@ class MyHead extends React.Component{
     }
 }
 
-ReactDOM.render(
-    <MyHead/>, 
-    document.querySelector('#app')
-);
+ReactDOM.render(<App/>, document.querySelector('#app'));

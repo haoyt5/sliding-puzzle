@@ -40,7 +40,7 @@ class App extends React.Component{
         return(
         <BrowserRouter  basename='/todolist-app/dist'>
             <div className="to-do-app container">
-                <h1 className="center  blue-text  text-lighten-2">TO DO LIST</h1>
+                <h4 className="center  blue-text  text-lighten-2">8 pieces sliding puzzle</h4>
                 {/* <TodoList/> */}
                 <Route 
                     exact path="/" 

@@ -13,22 +13,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haoyt5/sliding-puzzle.git "
+    "url": "git+https://github.com/haoyt5/to-do-list.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://haoyt5.github.io/sliding-puzzle/"
+    "url": "https://github.com/haoyt5/to-do-list/issues"
   },
-  "homepage": "https://haoyt5.github.io/sliding-puzzle/",
+  "homepage": "https://haoyt5.github.io/to-do-list",
   "dependencies": {
     "gh-pages-webpack-plugin": "^1.0.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-redux": "^6.0.1",
     "react-router-dom": "^5.0.0",
-    "shortid": "^2.2.14",
     "webpack": "^4.29.6",
     "webpack-dev-server": "^3.2.1"
   },
