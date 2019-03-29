@@ -11,11 +11,6 @@ class App extends React.Component{
             // todos:[],
             challengers:[]
         }
-        // this.addChallenger=(challenger) =>{ 
-        //     this.setState({
-        //         challengers:[...this.state.challengers,challenger]
-        //     })
-        // }
     }
     addTodo (todo){
         this.setState({
@@ -55,7 +50,7 @@ class App extends React.Component{
               
         <BrowserRouter>
             <div className="to-do-app container">
-                <h4 className="center  blue-text  text-lighten-2">Sliding Puzzle</h4>
+                <h2 className="center  blue-text  text-lighten-3">Sliding Puzzle</h2>
                 <Game addChallenger={this.addChallenger.bind(this)}
                      />
                 {/* <The Game Container> */}

@@ -178,7 +178,7 @@ class Game extends React.Component{
         //return if they've already won
         if(this.state.win){
             console.log('贏了～～')
-            alert('已完成請重新開始新局！')
+            alert('Hit restart to get another challenge！')
             return;
         } 
         // check possible moves
@@ -219,26 +219,28 @@ class Game extends React.Component{
             <div className="gameboard">
             {/* <GamerForm addChallenger={addChallenger} /> */}
             {/* GameForm Start*/}
+            <p className="center flow-text">{ this.state.name} join the challenge</p>
             <div className="container">
-            <div className="row center">{ this.state.name} join the challenge.</div>
-            <p className="row center" >hit restart to shuffle a more difficult challenge!</p>
-            <div className="row center">
-                <div className="col s1">  </div>
-                <form action="" onSubmit={this.handleSubmit.bind(this)}>
-                    <input  onChange={this.handleChange.bind(this)}
-                            className="col s5 "
-                            name="challenger"
-                            type="text"
-                            placeholder="submit your name to join"
-                            value={this.state.challenger}
-                            />
-                    <div className="col s1">  </div>
-                    <button className="btn-small col s3"
-                            type="submit"
-                                                >Submit</button>
-                </form>
-                
-            </div>
+            
+                <div className="row center">
+                    <div className="col s2">  </div>
+                    <form action="" onSubmit={this.handleSubmit.bind(this)}>
+                        <input  onChange={this.handleChange.bind(this)}
+                                className="col s3 "
+                                name="challenger"
+                                type="text"
+                                placeholder="Name"
+                                value={this.state.challenger}
+                                />
+
+                        <div className="col s2">  </div>
+                        <button className="btn-small col s3"
+                                type="submit"
+                                                    >Submit</button>
+                    </form>
+                    
+                </div>
+
             </div>
             {/* GameForm End */}
             
