@@ -1,2 +1,2 @@
-# ToDoList
-https://haoyt5.github.io/todolist-app/dist/
+# 8 pieces sliding puzzle
+[Landing Page](https://haoyt5.github.io/sliding-pizzle/dist/)
