@@ -221,6 +221,7 @@ class Game extends React.Component{
             {/* GameForm Start*/}
             <div className="container">
             <div className="row center">{ this.state.name} join the challenge.</div>
+            <p className="row center" >hit restart to shuffle a more difficult challenge!</p>
             <div className="row center">
                 <div className="col s1">  </div>
                 <form action="" onSubmit={this.handleSubmit.bind(this)}>
