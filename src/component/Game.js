@@ -16,6 +16,7 @@ class StatusMenu extends React.Component{
                                 onClick={this.clickHandler.bind(this)}>Restart</button>
                         <br/>
                         <br/>
+                        
                         {/* <p>[place holders] (counts) clicks / [Win] Puzzle Solved in (counts) clicks</p> */}
             </div>
         );
@@ -241,7 +242,7 @@ class Game extends React.Component{
             {/* GameForm End */}
             
             <div className="container center">
-                <p>{this.state.tiles}</p> 
+                {/* <p>The Quiz:{this.state.tiles}</p>  */}
                 <div id="game-board">
                 {/* {this.state.tiles.map(funciton( tile, position ) {
                     return(
